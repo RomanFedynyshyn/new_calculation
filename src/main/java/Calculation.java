@@ -1,3 +1,4 @@
+//Calculation class every action with two numbers is here.
 public class Calculation {
 
     private float firstDigit;

@@ -1,10 +1,12 @@
+//Menu class
+//The purpose - to run menu and validate number input
 import java.util.Scanner;
 import org.apache.log4j.*;
 
 public class RunMenu {
     static Scanner c = new Scanner(System.in);
     final static Logger logger = Logger.getLogger(RunMenu.class);
-
+//Validation method
     private static boolean validation(String digit) {
         try {
             Float.parseFloat(digit);
@@ -16,7 +18,7 @@ public class RunMenu {
         }
         return false;
     }
-
+//Number input method (Using validation)
     private static Calculation numberEntering() {
         Calculation calculation = new Calculation();
         System.out.println("Please enter your two digits in -20 +20 range");
@@ -39,7 +41,7 @@ public class RunMenu {
 
         return calculation;
     }
-
+//Menu text and showing
     public static void menu() {
         Calculation calculation = numberEntering();
         int i;
